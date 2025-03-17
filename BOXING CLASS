@@ -1,0 +1,26 @@
+public class CLASS_BOXING {
+   public static void main(String[] args){
+      
+      Integer boxedInt = Integer.valueOf(10);
+      Double boxedDouble = Double.valueOf(20.5);
+      Character boxedChar = Character.valueOf('A');
+      Boolean boxedBoolean = Boolean.valueOf(true);
+      Float boxedFloat = Float.valueOf(30.5f);
+
+   
+      int unboxedInt = boxedInt.intValue();
+      double unboxedDouble = boxedDouble.doubleValue();
+      boolean unboxedBoolean = boxedBoolean.booleanValue();
+      float unboxedFloat = boxedFloat.floatValue();
+
+      System.out.println("Boxed INT: " + boxedInt);
+      System.out.println("Unboxed INT: " + unboxedInt);
+      System.out.println("Boxed Double: " + boxedDouble);
+      System.out.println("Unboxed Double: " + unboxedDouble);
+      System.out.println("Boxed Char: " + boxedChar);
+      System.out.println("Boxed Boolean: " + boxedBoolean);
+      System.out.println("Boxed Float: " + boxedFloat);
+   }
+}
+
+
